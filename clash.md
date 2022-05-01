@@ -5,429 +5,693 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 迪拜, server: asr-farda.ir, port: 49110, type: vmess, uuid: 47bce6b8-c260-11ec-b514-000c297a3bfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pdOa1847/, ws-headers: {Host: asr-farda.ir}, udp: true}
-  - {name: 香港, server: 45.125.64.201, port: 27442, type: vmess, uuid: 3463f354-529a-4f40-9019-b9b10dc08233, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "", server: 104.128.191.195, port: 62864, type: vmess, uuid: f1a5d2f8-a8fa-4188-aeac-42a34227cf6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)🇫🇷法国_167, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120208301422, ws-headers: {Host: 54.37.192.112}, udp: true}
-  - {name: Anycast_俄罗斯_11, server: aflcn.yixuedianzishu.com, port: 51525, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: 54.37.192.112:443-V2--646178058, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120208301422, ws-headers: {Host: www.15738743.xyz}, udp: true}
-  - {name: 欢迎订阅钱科技0425_38, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /go, ws-headers: {Host: us02.gogogoo.cyou}, udp: true}
-  - {name: 美国|TG频道:@poduvjd, server: 104.194.243.145, port: 443, type: vmess, uuid: 2fe53f4d-29bf-489a-a083-f4bd806c6385, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nKCAS980y, ws-headers: {Host: 104.194.243.145}, udp: true}
-  - {name: Anycast_巴西_13, server: aflcn.yixuedianzishu.com, port: 51530, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: US-Openit.ml, server: 104.194.243.145, port: 443, type: vmess, uuid: 2fe53f4d-29bf-489a-a083-f4bd806c6385, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nKCAS980y, ws-headers: {Host: 104.194.243.145}, udp: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: 96.45.163.53, port: 9999, type: vmess, uuid: f9f8ffc1-6bf3-415d-a169-84edbf634f28, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 249_1, server: 67.21.87.226, port: 443, type: vmess, uuid: 8c679b81-84fc-43ce-9553-ddca575a6949, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/120306182525, ws-headers: {Host: 67.21.87.226}, udp: true}
-  - {name: 233v2_com_104_128_190_115, server: 104.128.190.115, port: 44771, type: vmess, uuid: a4aa83d4-db1c-42a6-844d-135d6635b463, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "Hongkong, V2 - B Group", server: V2-NODE-4-B.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: 8f19a2d0-4fd0-4a7d-816d-761e1f5d87d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-4-B.GFWAIRPORT.NET}, udp: true}
-  - {name: Anycast_加拿大_9, server: aflcn.yixuedianzishu.com, port: 51520, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: 中国_tg频道：univstar_29, server: shcu.forgebukkit.com, port: 47389, type: vmess, uuid: f680dfd8-3b59-48af-aea8-1d4bc09a1705, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Anycast_土耳其_14, server: aflcn.yixuedianzishu.com, port: 51531, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: "[回国]华南•1x_16", server: leonguangzhou.asuscomm.com, port: 20000, type: vmess, uuid: 5b059403-c05c-4609-ab01-a9352041d2e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray-path, ws-headers: {Host: leonguangzhou.asuscomm.com}, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48, server: 96.45.163.53, port: 9999, type: vmess, uuid: f9f8ffc1-6bf3-415d-a169-84edbf634f28, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Anycast_法国_15, server: aflcn.yixuedianzishu.com, port: 51526, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: Anycast_英国_7, server: aflcn.yixuedianzishu.com, port: 51518, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: Anycast_韩国_10, server: aflcn.yixuedianzishu.com, port: 51522, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: 中转_加拿大01_2, server: aflzz-us.yixuedianzishu.com, port: 42171, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[回国]华南•1x", server: leonguangzhou.asuscomm.com, port: 20000, type: vmess, uuid: 5b059403-c05c-4609-ab01-a9352041d2e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray-path, ws-headers: {Host: leonguangzhou.asuscomm.com}, udp: true}
-  - {name: Anycast_德国_8, server: aflcn.yixuedianzishu.com, port: 51519, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: 中国_tg频道：univstar_30, server: whcu.cwcsrsyby.xyz, port: 11775, type: vmess, uuid: 05cf79e9-c279-491a-fb04-494bbbf583b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Anycast_美国_6, server: aflcn.yixuedianzishu.com, port: 51513, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: Anycast_印度_12, server: aflcn.yixuedianzishu.com, port: 51524, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: Anycast_台湾_4, server: aflcn.yixuedianzishu.com, port: 51514, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|4号, server: v2-3.godlight.xyz, port: 39276, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
-  - {name: Anycast_泰国_5, server: aflcn.yixuedianzishu.com, port: 51527, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|2号, server: v2-1.godlight.xyz, port: 12236, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|6号, server: v2-5.godlight.xyz, port: 39786, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
-  - {name: TG频道|https://t.me/getv2ray|5号, server: v2-4.godlight.xyz, port: 50496, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
-  - {name: Anycast_日本_3, server: aflcn.yixuedianzishu.com, port: 51512, type: vmess, uuid: 559b002a-4e59-3d60-9414-03603f3894da, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /564dfa20/, ws-headers: {Host: aflcn.yixuedianzishu.com}, udp: true}
-  - {name: CN_399, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_13, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _650+|+8.44Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 中国_tg+univstar_36, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_TG+univstar_127, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_42+TG@peekfun, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_412, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_31+TG@peekfun, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit_ml_150, server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: fdb88add-f0a3-4984-8a54-2969d84d6aef, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit_ml_19, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: fdb88add-f0a3-4984-8a54-2969d84d6aef, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-香港Kirino, server: 120.232.82.179, port: 13133, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 256:ySh8ar, obfs-param: hk2sch7dd6f256.wns.windows.com, udp: true}
+  - {name: 日本 - NTRB - 1x, server: cn.speedabc.xyz, port: 32002, type: trojan, password: cfbabf31-2cf6-40ca-9688-abbb682370aa, sni: jp-bgp.speedaccelerate.com, skip-cert-verify: true, udp: true}
+  - {name: AU_144, server: 185.167.116.253, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: vpnpool-彰化Hinet-dip, server: 120.232.215.218, port: 15505, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN_402+|+7.77Mb, server: 14.29.124.168, port: 24015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: AU_104, server: 185.167.116.253, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: EXTM3U-Seoul-Choopa, server: 120.233.10.181, port: 15309, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 澳门宁波BGP→HKx5_71, server: HZ-BGP.JP.T0.yunddns.top, port: 64901, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-mo/ee56h3ckt4yaaf3z, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: 中国_tg+univstar_272, server: 120.233.10.181, port: 15307, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国_12, server: jj02.nfeng6.pp.ua, port: 39013, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_1388, server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: -AU-大米粥-54_54, server: 185.167.116.253, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: RELAY-Openit.ml, server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: 4ea642c6-ca67-4025-aed6-f743f13d0e20, skip-cert-verify: true, udp: true}
+  - {name: 中国_tg+univstar_208, server: 120.233.10.163, port: 15303, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 日本 - NTR - 1x, server: cn.speedabc.xyz, port: 42003, type: trojan, password: cfbabf31-2cf6-40ca-9688-abbb682370aa, sni: jp1.speedaccelerate.com, skip-cert-verify: true, udp: true}
+  - {name: EXTM3U-Seoul-Choopa 2, server: 120.233.10.181, port: 15305, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-Seoul-Choopa 3, server: 120.233.10.181, port: 15302, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: LT_1232, server: 213.183.63.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: DE_645, server: 5.183.179.166, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: RU_882, server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: EXTM3U-Seoul-Choopa 4, server: 120.233.10.181, port: 15303, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡 - SIN - 1x, server: cn.speedabc.xyz, port: 42004, type: trojan, password: cfbabf31-2cf6-40ca-9688-abbb682370aa, sni: sg1.speedaccelerate.com, skip-cert-verify: true, udp: true}
+  - {name: RO_1495, server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: -NL-大米粥-11_11, server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: DE_574, server: 5.183.179.170, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 中国_14, server: jj02.nfeng6.pp.ua, port: 39042, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: -NL-大米粥-53_53, server: 213.183.51.172, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 中国_17, server: jj02.nfeng6.pp.ua, port: 39006, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "Singapore,+SS", server: ss-node-3.gfwairport.net, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: d3bd4f04-f99b-4905-9916-bac87c728277, udp: true}
+  - {name: DE_544, server: 5.183.179.146, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: _213, server: 169.197.142.99, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 中国_tg+univstar_206, server: 120.233.10.163, port: 15301, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 新加坡上海移动→JPx4_41, server: SHYD.FK.yunddns.top, port: 64915, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-sg/xitjeaqso55jtjsy, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: (Youtube技术分享室)🇨🇳中国+9, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国_Relay-tg:univstar_Relay-92, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: DE_589, server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: -NL-大米粥-14_14, server: 213.183.51.172, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 香港广州移动→HKx4_132, server: GZ-YD-2.HK.FB.yunddns.top, port: 64904, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-hk/s9z9jdwqt2m05hmt, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: 中国_tg+univstar_270, server: 120.233.10.181, port: 15305, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: -NL-大米粥-9_9, server: 213.183.51.171, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: (Youtube技术分享室)🇨🇳中国+4, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国_3, server: jj01.nfeng6.pp.ua, port: 39049, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "Incheon,+SS+2", server: ss-node-2.gfwairport.net, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: d3bd4f04-f99b-4905-9916-bac87c728277, udp: true}
+  - {name: DE_525, server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: vpnpool-Seoul-Choopa, server: 120.232.215.218, port: 15308, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 日本上海移动→JPx4_53, server: SHYD.FK.yunddns.top, port: 64906, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-jp/2rym2c8s7vigog62, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: DE_633, server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: DE_698, server: 5.183.179.170, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 新加坡东莞BGP→HKx5_44, server: GZBGP2.77.yunddns.top, port: 64915, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-sg/xitjeaqso55jtjsy, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: 中国_tg+univstar_129, server: 120.232.215.218, port: 15307, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国_tg+univstar_212, server: 120.233.10.163, port: 15307, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: ♥️YouTube梦歌♥️_97, server: tw.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: -NL-大米粥-4_4, server: 213.183.51.171, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 日本宁波BGP→HKx5_59, server: HZ-BGP.JP.T0.yunddns.top, port: 64906, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-jp/2rym2c8s7vigog62, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: (Youtube技术分享室)🇨🇳中国+10, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: DE_531, server: 5.183.179.167, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: vpnpool-Seoul-Choopa 2, server: 120.232.215.218, port: 15309, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: univstar_5, server: 120.233.10.230, port: 50500, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+  - {name: 印度长沙联通→JPx4_28, server: HN-LT.JP.MU.yunddns.top, port: 64909, type: vmess, uuid: 27ffe030-c1a8-3b1f-b194-9cde7d2e8127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download/microsoft-mo/ee56h3ckt4yaaf3z, headers: {Host: "%7B%22host%22:%22download.microsoft.com%22%7D"}}, udp: true}
+  - {name: 中国_tg+univstar_127, server: 120.232.215.218, port: 15305, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国_13, server: jj02.nfeng6.pp.ua, port: 39014, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: (Youtube技术分享室)🇨🇳中国+14, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: RO_1488, server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 中国_15, server: jj02.nfeng6.pp.ua, port: 39043, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_tg+univstar_210, server: 120.233.10.163, port: 15305, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: EXTM3U-Seoul-Choopa 5, server: 120.233.10.163, port: 15310, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 中国_tg+univstar_135, server: 120.232.215.218, port: 15310, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: DE_594, server: 5.183.179.146, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 中国_4, server: jj01.nfeng6.pp.ua, port: 39053, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RO_1496, server: 185.126.116.117, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 中国_16, server: jj02.nfeng6.pp.ua, port: 39005, type: vmess, uuid: 025f4054-7985-38c3-8f62-6e50f098ad3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_530, server: 5.183.179.170, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: -NL-大米粥-8_8, server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 台湾Hinet_33, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
+  - {name: 香港AZ-广东移动负载聚合双线(中转), server: gzyd.xxcv.cc, port: 20070, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC, server: 210.0.159.90, port: 38888, type: trojan, password: a0dac702-8ab0-40e7-a8a1-1dd7d8fb65e0, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国_tg+univstar_211, server: 120.233.10.163, port: 15306, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 香港AZ-1号_29, server: 20.205.98.64, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
+  - {name: 香港AZ-2号, server: 20.239.157.77, port: 28443, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz, skip-cert-verify: true, udp: true}
+  - {name: -NL-大米粥-3_3, server: 213.183.51.172, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 香港AZ-2号_30, server: 20.239.157.77, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC1_5×_13, server: 210.0.159.90, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -450,54 +714,87 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 迪拜
-      - 香港
-      - ""
-      - (Youtube技术分享室)🇫🇷法国_167
-      - Anycast_俄罗斯_11
-      - 54.37.192.112:443-V2--646178058
-      - 欢迎订阅钱科技0425_38
-      - 美国|TG频道:@poduvjd
-      - Anycast_巴西_13
-      - US-Openit.ml
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 249_1
-      - 233v2_com_104_128_190_115
-      - Hongkong, V2 - B Group
-      - Anycast_加拿大_9
-      - 中国_tg频道：univstar_29
-      - Anycast_土耳其_14
-      - "[回国]华南•1x_16"
-      - github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 48
-      - Anycast_法国_15
-      - Anycast_英国_7
-      - Anycast_韩国_10
-      - 中转_加拿大01_2
-      - "[回国]华南•1x"
-      - Anycast_德国_8
-      - 中国_tg频道：univstar_30
-      - Anycast_美国_6
-      - Anycast_印度_12
-      - Anycast_台湾_4
-      - TG频道|https://t.me/getv2ray|4号
-      - Anycast_泰国_5
-      - TG频道|https://t.me/getv2ray|2号
-      - TG频道|https://t.me/getv2ray|6号
-      - TG频道|https://t.me/getv2ray|5号
-      - Anycast_日本_3
-      - CN_399
-      - CN_13
-      - _650+|+8.44Mb
-      - 中国_tg+univstar_36
-      - CN_8du.shop
-      - CN_TG+univstar_127
-      - CN_42+TG@peekfun
-      - CN_412
-      - CN_31+TG@peekfun
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - RELAY-Openit_ml_150
-      - RELAY-Openit_ml_19
-      - vpnhat-香港Kirino
+      - 日本 - NTRB - 1x
+      - AU_144
+      - vpnpool-彰化Hinet-dip
+      - CN_402+|+7.77Mb
+      - AU_104
+      - EXTM3U-Seoul-Choopa
+      - 澳门宁波BGP→HKx5_71
+      - 中国_tg+univstar_272
+      - 中国_12
+      - NL_1388
+      - -AU-大米粥-54_54
+      - RELAY-Openit.ml
+      - 中国_tg+univstar_208
+      - 日本 - NTR - 1x
+      - EXTM3U-Seoul-Choopa 2
+      - EXTM3U-Seoul-Choopa 3
+      - LT_1232
+      - DE_645
+      - RU_882
+      - EXTM3U-Seoul-Choopa 4
+      - 新加坡 - SIN - 1x
+      - RO_1495
+      - -NL-大米粥-11_11
+      - DE_574
+      - 中国_14
+      - -NL-大米粥-53_53
+      - 中国_17
+      - Singapore,+SS
+      - DE_544
+      - _213
+      - 中国_tg+univstar_206
+      - 新加坡上海移动→JPx4_41
+      - (Youtube技术分享室)🇨🇳中国+9
+      - 中国_Relay-tg:univstar_Relay-92
+      - DE_589
+      - -NL-大米粥-14_14
+      - 香港广州移动→HKx4_132
+      - 中国_tg+univstar_270
+      - -NL-大米粥-9_9
+      - (Youtube技术分享室)🇨🇳中国+4
+      - 中国_3
+      - Incheon,+SS+2
+      - DE_525
+      - vpnpool-Seoul-Choopa
+      - 日本上海移动→JPx4_53
+      - DE_633
+      - DE_698
+      - 新加坡东莞BGP→HKx5_44
+      - 中国_tg+univstar_129
+      - 中国_tg+univstar_212
+      - ♥️YouTube梦歌♥️_97
+      - -NL-大米粥-4_4
+      - 日本宁波BGP→HKx5_59
+      - (Youtube技术分享室)🇨🇳中国+10
+      - DE_531
+      - vpnpool-Seoul-Choopa 2
+      - univstar_5
+      - 印度长沙联通→JPx4_28
+      - 中国_tg+univstar_127
+      - 中国_13
+      - (Youtube技术分享室)🇨🇳中国+14
+      - RO_1488
+      - 中国_15
+      - 中国_tg+univstar_210
+      - EXTM3U-Seoul-Choopa 5
+      - 中国_tg+univstar_135
+      - DE_594
+      - 中国_4
+      - RO_1496
+      - 中国_16
+      - DE_530
+      - -NL-大米粥-8_8
+      - 台湾Hinet_33
+      - 香港AZ-广东移动负载聚合双线(中转)
+      - 香港HGC
+      - 中国_tg+univstar_211
+      - 香港AZ-1号_29
+      - 香港AZ-2号
+      - -NL-大米粥-3_3
+      - 香港AZ-2号_30
+      - 香港HGC1_5×_13
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
