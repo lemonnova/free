@@ -5,781 +5,1533 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: -NL-大米粥-28_28, server: 213.183.51.171, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 15510 @WangCai_1, server: dajbxkr.naikonode.top, port: 15510, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: microsoft.com, udp: true}
-  - {name: US_191_14_17Mb_29, server: 152.70.88.168, port: 49081, type: vmess, uuid: e19ea4e5-d918-4d1c-a384-c232ebe7b803, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Pool_荷兰_1394, server: 85.209.159.107, port: 20403, type: vmess, uuid: b3b08b1c-c0a4-11ec-8151-00163c3fe0cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Asq7j5Mb/}, udp: true}
-  - {name: 捷克(TG频道:@poduvjd), server: 194.87.99.122, port: 62560, type: vmess, uuid: e19c03f6-97b9-4c2b-a42d-19daea18d849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: tg:univstar_Relay-61, server: 103.172.116.6, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: DE_550+_31_82Mb_69, server: 5.183.179.170, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: US-Openit.ml, server: 136.175.179.6, port: 6529, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: loslite.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: VN-Openit.ml, server: 103.81.85.191, port: 4588, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: vn.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道:@poduvjd), server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
-  - {name: vpnhat-香港HKBN-dip, server: 120.233.10.230, port: 50200, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
-  - {name: DE_551+_11_32Mb_14, server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: -AU-大米粥-49_49, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: LT_1232+_21_03Mb_131, server: 213.183.63.219, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: (Youtube技术分享室)🇨🇭瑞士 2, server: 185.126.116.124, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 波兰(TG频道:@poduvjd), server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: CN_409+_10_97Mb_67, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: RO_1258+_40_70Mb_134, server: 185.126.116.117, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: -NL-大米粥-15_15, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: "新加坡: 深港RFC-微云", server: 120.197.130.90, port: 45302, type: trojan, password: rXpa83kacgcC7Kme, skip-cert-verify: true, udp: true}
-  - {name: RO_1267+_50_91Mb_187, server: 185.126.116.117, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: LT_1275+_23_11Mb_204, server: 213.183.63.219, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: (Youtube技术分享室)🇨🇳中国 6, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: -NL-大米粥-23_23, server: 213.183.51.171, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 80丨联通手厅丨日本50Mbps丨2, server: jp4.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: HK-Openit_ml_63, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: CN, server: 120.240.48.20, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.20}}, udp: true}
-  - {name: RO_1276+_11_96Mb_224, server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧, server: 5.183.179.145, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: DE_704, server: 5.183.179.137, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: GB_876+|10.20Mb, server: 152.89.210.84, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: DE_595+_58_00Mb_64, server: 5.183.179.167, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: DE_606, server: 5.183.179.170, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: US-Openit.ml 2, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)🇨🇳中国 14, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: DE_557+_18_51Mb_46, server: 5.183.179.166, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: https://t.me/poduvjd, server: 02-hgvhjh.globalrelay.link, port: 15506, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: microsoft.com, udp: true}
-  - {name: JP-Openit.ml, server: 152.70.80.107, port: 53950, type: vmess, uuid: e1553fe3-73a6-431e-b507-c21659de2c76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)🇬🇧英国 25, server: 152.89.210.105, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: DE_584, server: 5.183.179.146, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: (Youtube技术分享室)🇬🇧英国 28, server: 152.89.210.105, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: GB_898+|12.78Mb, server: 152.89.210.84, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 15503 @WangCai_1, server: 120.232.215.218, port: 15503, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: microsoft.com, udp: true}
-  - {name: github.com/v2rayfree - 俄罗斯  37, server: 194.87.99.122, port: 62560, type: vmess, uuid: e19c03f6-97b9-4c2b-a42d-19daea18d849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP, server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_中国-未知_479, server: 120.240.48.20, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}, udp: true}
-  - {name: CN_438+_10_63Mb_144, server: gzyd.xxcv.cc, port: 20030, type: trojan, password: 72e9af0c-83b4-4069-8406-7fd8ee3e474a, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室)🇨🇳中国 16, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: RU-高速节点购买：v1.mk/vip（浏览器打开）, server: 45.141.102.51, port: 33689, type: vmess, uuid: 5bff6f03-1d6f-4ef0-8320-3a4dd7eb4cc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_58+TGatpeekfun_152, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: AU_67+|33.21Mb, server: 185.167.116.250, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: AU_159+|20.33Mb, server: 185.167.116.250, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: DE_576+_55_58Mb_36, server: 5.183.179.166, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: (Youtube技术分享室)🇩🇪德国 4, server: 5.183.179.166, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: -NL-大米粥-56_56, server: 213.183.51.172, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: RO_1390, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: 捷克(TG频道:@poduvjd) 2, server: 194.87.99.122, port: 62560, type: vmess, uuid: e19c03f6-97b9-4c2b-a42d-19daea18d849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_598, server: 5.183.179.167, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: HK-Openit_ml_57, server: 210.0.159.90, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
-  - {name: -AU-大米粥-32_32, server: 185.167.116.253, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: CN_59+TGatpeekfun_9, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: AU_71+|32.67Mb, server: 185.167.116.250, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: AU_83+|27.40Mb, server: 185.167.116.250, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: DE_621+_33_22Mb_50, server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: CN_06, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: TW |24.02Mb, server: 103.98.73.12, port: 5005, type: vmess, uuid: ecf9bfdf-5fc5-4040-eb9f-eaec282c478b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ythe54}, udp: true}
-  - {name: "[05-02]-🇺🇦-乌克兰-002-5.183.179.140", server: 5.183.179.140, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: DE_572+_36_83Mb_78, server: 5.183.179.166, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: DE_666, server: 5.183.179.167, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: DE_630+_40_47Mb_56, server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: (Youtube技术分享室)🇨🇭瑞士 4, server: 185.126.116.117, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: DE_555+_75_34Mb_15, server: 5.183.179.167, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: AU_154+|37.43Mb, server: 185.167.116.250, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: RO_1482, server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: DE_445+_22_30Mb_12, server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: DE_575+|16.50Mb, server: 5.183.179.166, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 美国_-tg频道:atunivstar_20, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _12_71Mb_126, server: 152.89.210.105, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _11_18Mb_24, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: RELAY-Openit.ml, server: 211.91.243.241, port: 60007, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: flb.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: CN_186+_47_81Mb_55, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: RO_1273+_16_57Mb_213, server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 15507 @WangCai_1, server: 01-hgvhjh.globalrelay.link, port: 15507, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: microsoft.com, udp: true}
-  - {name: 日本 020, server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: -NL-大米粥-16_16, server: 213.183.51.171, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: US_2625 |32.85Mb, server: 152.70.80.107, port: 53950, type: vmess, uuid: e1553fe3-73a6-431e-b507-c21659de2c76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_551+_40_00Mb_32, server: 5.183.179.170, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: CN_66_2_06Mb_6, server: us2407.cloudmatrix.xyz, port: 2407, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: us2407.cloudmatrix.xyz}}, udp: true}
-  - {name: DE_553+_31_57Mb_70, server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: US-Openit.ml 3, server: 136.175.179.6, port: 6519, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: loslite2.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: DE_540+_10_98Mb_33, server: 5.183.179.146, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: "[05-04]|oslook|日本(JP)Japan/Tokyo_29", server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2", server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _HK_香港_1, server: 4.vip341.xyz, port: 443, type: vmess, uuid: 79c82b92-bc4c-382c-8042-b50d27b9c564, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: 4.vip341.xyz}}, udp: true}
+  - {name: CN_47_36_83Mb_1, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: CZ-Openit.ml, server: 194.87.99.122, port: 62560, type: vmess, uuid: e19c03f6-97b9-4c2b-a42d-19daea18d849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  12, server: 168.138.40.254, port: 38358, type: vmess, uuid: 3e80dfb4-fd96-4040-bdec-e79ed3a7d0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国Microsoft数据中心 21, server: hk5.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.fdns.cloudlink123.com}}, udp: true}
+  - {name: github.com/freefq - 日本东京Oracle云计算数据中心 9, server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK-Openit.ml, server: hk5.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.fdns.cloudlink123.com}}, udp: true}
+  - {name: HK-Openit_ml_54, server: 43.154.77.196, port: 38539, type: vmess, uuid: a379bd7f-9d0d-4fb5-90c2-9b302782c4d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: JP_21, server: 168.138.40.254, port: 38358, type: vmess, uuid: 3e80dfb4-fd96-4040-bdec-e79ed3a7d0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR-Openit.ml, server: 144.24.88.101, port: 16833, type: vmess, uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR-高速节点购买：v1.mk/vip, server: www.sszhegeba.ml, port: 443, type: vmess, uuid: b4627c3c-3ea0-42d7-8f58-e4e417ed0d36, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/056dbf9?ed=2048", headers: {Host: www.sszhegeba.ml}}, udp: true}
+  - {name: RELAY, server: tw2506.cloudmatrix.xyz, port: 2506, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_15, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_459, server: tw2505.cloudmatrix.xyz, port: 2505, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tw2505.cloudmatrix.xyz}}, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_451, server: 120.240.48.20, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_465, server: 120.240.48.20, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}, udp: true}
+  - {name: Relay_美国-日本_18, server: jpaz3.xmrth-node.xyz, port: 11012, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: jpaz3.xmrth-node.xyz}}, udp: true}
+  - {name: RU-Openit.ml, server: 45.141.102.51, port: 33689, type: vmess, uuid: 5bff6f03-1d6f-4ef0-8320-3a4dd7eb4cc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU-Openit.ml 2, server: 45.141.102.51, port: 33689, type: vmess, uuid: 5bff6f03-1d6f-4ef0-8320-3a4dd7eb4cc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU-高速节点购买：v1.mk/vip（浏览器打开）, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: efaeb7b2-bd81-37d7-b3af-5c633570f423, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: "Singapore, V2", server: V2-NODE-3.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: 2e1470e9-f545-43b0-a0aa-1ed0032c3727, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: V2-NODE-3.GFWAIRPORT.NET}}, udp: true}
+  - {name: TW-Openit.ml, server: tw01.nttkk.com, port: 443, type: vmess, uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw01.nttkk.com}}, udp: true}
+  - {name: TW-Openit.ml 2, server: 103.98.73.12, port: 5005, type: vmess, uuid: ecf9bfdf-5fc5-4040-eb9f-eaec282c478b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ythe54, headers: {Host: 103.98.73.12}}, udp: true}
+  - {name: VN-Openit.ml, server: 103.179.187.87, port: 80, type: vmess, uuid: 84e11227-e771-4c72-88ab-9d74c5b22e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
+  - {name: 澳大利亚_147, server: 43.129.227.60, port: 27727, type: vmess, uuid: d00f5ea9-4658-4f0a-a6c3-e29ef711cf3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 韩国_1080, server: 140.238.6.99, port: 443, type: vmess, uuid: f613af75-f9eb-3d84-9357-7c3b00d950a2, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /live/cctv6_2/index.m3u8, headers: {Host: ora1.speedsvip.co}}, udp: true}
+  - {name: 荷兰 005, server: 45.141.102.51, port: 33689, type: vmess, uuid: 5bff6f03-1d6f-4ef0-8320-3a4dd7eb4cc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君), server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.19}}, udp: true}
+  - {name: 美国Microsoft数据中心 4, server: jpaz3.xmrth-node.xyz, port: 11012, type: vmess, uuid: f3d669ec-1617-3d40-be56-3c8a45fc44eb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 日本, server: V2-NODE-1-B.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: e0f0f931-9091-4f3f-b1cb-78fa0836e523, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: V2-NODE-1-B.GFWAIRPORT.NET}}, udp: true}
+  - {name: 香港, server: 43.154.77.196, port: 38539, type: vmess, uuid: a379bd7f-9d0d-4fb5-90c2-9b302782c4d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.77.196]}}, udp: true}
+  - {name: 香港 2, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.72.145]}}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君), server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 2, server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: tw01.nttkk.com, port: 443, type: vmess, uuid: 3a9c0d0c-e0fd-3145-a414-ec265e7010b7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw01.nttkk.com}}, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2, server: 120.240.48.20, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.20}}, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3, server: vfly5.xyz, port: 443, type: vmess, uuid: 825136bb-fc0a-4f43-8307-dc2e36f27e2d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly5.xyz}}, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4, server: 140.238.48.194, port: 8888, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5, server: 1.ezydfdd.com, port: 443, type: vmess, uuid: 4ee48ad8-178c-40a2-9c52-a14e90a06e49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nmsl, headers: {Host: 1.ezydfdd.com}}, udp: true}
+  - {name: 中国, server: 120.240.48.20, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 120.240.48.20}}, udp: true}
+  - {name: (Youtube技术分享室)🇨🇭瑞士+5, server: 185.126.116.117, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: (Youtube技术分享室)🇩🇪德国+13, server: 5.183.179.166, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: (Youtube技术分享室)🇩🇪德国+33, server: 5.183.179.167, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "[05-02]-🇦🇶-亚太地区-006-103.172.116.6", server: 103.172.116.6, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _13_22Mb_130, server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: _GB_英国, server: 152.89.210.84, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _PL_波兰, server: 217.30.10.65, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _US_美国, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 2, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "|21.60Mb", server: 217.30.10.67, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 502更新_DE_德国_15, server: 5.183.179.146, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: AU_120+|40.68Mb, server: 185.167.116.250, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: AU_143+|28.76Mb, server: 185.167.116.250, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: AU_146+|18.51Mb, server: 185.167.116.253, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: AU_81+|14.40Mb, server: 185.167.116.250, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: AU-Openit_ml_49, server: 185.167.116.253, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: -AU-大米粥-46_46, server: 185.167.116.253, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: CA_09 TG@peekfun, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA-Openit_ml_53, server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CN_399, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_44+TGatpeekfun_92, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_48+TGatpeekfun_12, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_51+TGatpeekfun_11, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_56+TGatpeekfun_7, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip（浏览器打开）, server: cn1.relay.iepl.pw, port: 50600, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+  - {name: DE_509+_10_91Mb_24, server: 5.183.179.170, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: DE_559+_41_73Mb_71, server: 5.183.179.140, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: DE_585, server: 5.183.179.166, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: DE_587+_53_22Mb_210, server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: DE_590+_11_79Mb_20, server: 5.183.179.167, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: DE_598+_21_01Mb_17, server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: DE_600+_55_38Mb_133, server: 5.183.179.146, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: DE_606+_43_93Mb_190, server: 5.183.179.166, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: DE_608+_250_06Mb_91, server: 5.183.179.140, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: DE_650+_55_05Mb_92, server: 5.183.179.146, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: -GB-大米粥_16, server: 152.89.210.84, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: LT_1057, server: 213.183.63.218, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: LT_1135+_120_15Mb_42, server: 213.183.63.219, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: LT_1173, server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: LT_427 |24.74Mb, server: 213.183.53.177, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: NL_1241, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: NL_TG频道univstar_68, server: 213.183.59.229, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: -NL-大米粥-12_12, server: 213.183.51.172, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: -NL-大米粥-14_14, server: 213.183.51.172, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: -NL-大米粥-17_17, server: 213.183.51.172, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: -NL-大米粥-26_26, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: -NL-大米粥-33_33, server: 213.183.51.172, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: -NL-大米粥-41_41, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: -NL-大米粥-8_8, server: 213.183.51.172, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: Relay—tg:univstar_2, server: 103.172.116.6, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: RO_1249+_85_69Mb_15, server: 185.126.116.117, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: RO_1262 |18.60Mb, server: 185.126.116.117, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: RO_1336+|26.40Mb, server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: RU_1461, server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: RU_1467, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: RU_1479, server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: RU_1495, server: 217.30.10.65, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: RU_1514, server: 217.30.10.67, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: RU_1515, server: 217.30.10.67, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: RU_1523, server: 217.30.10.67, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: RU_166 TG@peekfun, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: RU_174 TG@peekfun, server: 217.30.10.67, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: RU_530 |40.88Mb, server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: US_204 TG@peekfun, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
+  - {name: US_630 |11.86Mb, server: 167.172.135.97, port: 25453, type: ss, cipher: aes-256-cfb, password: a40ff797db5c4b948cfe5a5234a0e74c, udp: true}
+  - {name: vpnhat-彰化Hinet-dip, server: 120.233.10.230, port: 50100, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+  - {name: 德国-1_41MB/s(Youtube:不良林)_244, server: 5.183.179.140, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 2, server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 3, server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 4, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 5, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 6, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 7, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君), server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 3, server: 169.197.142.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君), server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 3, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 4, server: 120.233.10.230, port: 50700, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6, server: 5.183.179.166, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga", server: tky3.ssgnode.ga, port: 443, type: trojan, password: 23115_5a451f03, skip-cert-verify: true, udp: true}
+  - {name: Frankfurt-M247, server: 5.183.179.183, port: 8080, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: gerv2.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  48, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 42, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港阿里云 1, server: s238.s2022.xyz, port: 37826, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港阿里云 2, server: s233.s2022.xyz, port: 39747, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港阿里云 6, server: s250.s2022.xyz, port: 27073, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 新加坡阿里云 4, server: s285.s2022.xyz, port: 35798, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 新加坡阿里云 5, server: s315.s2022.xyz, port: 40385, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, skip-cert-verify: true, udp: true}
+  - {name: HK_830 |10.72Mb, server: 210.0.159.90, port: 38443, type: trojan, password: 72e9af0c-83b4-4069-8406-7fd8ee3e474a, skip-cert-verify: true, udp: true}
+  - {name: HK-Openit.ml 2, server: 20.24.76.30, port: 12377, type: trojan, password: eea18f08-ec15-456f-a70b-232c72879ded, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml 2, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: true, udp: true}
+  - {name: KR-Openit.ml 2, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_938, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_51, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: RELAY-Openit.ml, server: 211.91.243.241, port: 60019, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: v2onesgp.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: RELAY-Openit.ml 2, server: 211.91.243.241, port: 60005, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: vn.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: Santa Clarita-Multacom, server: 198.211.45.184, port: 4586, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: uj.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: SC-Openit.ml, server: cera.doubledou.win, port: 4586, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
+  - {name: SG_1443 |31.40Mb, server: 206.189.156.88, port: 28443, type: trojan, password: 72e9af0c-83b4-4069-8406-7fd8ee3e474a, skip-cert-verify: true, udp: true}
+  - {name: SG_1444 |31.31Mb, server: 165.22.53.6, port: 28443, type: trojan, password: 72e9af0c-83b4-4069-8406-7fd8ee3e474a, skip-cert-verify: true, udp: true}
+  - {name: SG-Openit.ml, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: US_3016 |27.26Mb, server: us-02.pickaxe.sh, port: 443, type: trojan, password: Tp1ALMlfUBdkDmkW, skip-cert-verify: true, udp: true}
+  - {name: US-Openit.ml, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, skip-cert-verify: true, udp: true}
+  - {name: US-Openit.ml 2, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, skip-cert-verify: true, udp: true}
+  - {name: US-Openit.ml 3, server: qwanck.xyz, port: 443, type: trojan, password: 57aa53f3afbd, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 4, server: sg-sr-116.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet_33, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
+  - {name: 乌克兰(欢迎订阅Youtube破解资源君), server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
+  - {name: "新加坡: 杭港DMIT-猫猫", server: relay.shbgp.entrance1-fp.icu, port: 25240, type: trojan, password: rXpa83kacgcC7Kme, skip-cert-verify: true, udp: true}
+  - {name: 长沙联通-Kyoto-Aiyun, server: 211.91.243.241, port: 60051, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: ia.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: 长沙联通-Santa Clarita-Multacom, server: 211.91.243.241, port: 60014, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: uj.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: 长沙联通-Sydney-M247, server: 211.91.243.241, port: 60006, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, sni: sydney.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 7b4066ae-accc-11eb-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, skip-cert-verify: true, udp: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
+  - {name: :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧, server: 213.183.53.177, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧, server: 213.183.53.200, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧, server: 213.183.53.200, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: GB_744 |52.06Mb, server: 152.89.210.105, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: LT_934 |35.14Mb, server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: LT_937 |41.60Mb, server: 213.183.53.177, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: LT_938 |31.01Mb, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: LT_942 |37.38Mb, server: 213.183.53.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: LT_945 |38.22Mb, server: 213.183.53.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: LT_947 |34.62Mb, server: 213.183.53.177, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: LT_950 |31.60Mb, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: LT_951 |32.73Mb, server: 213.183.53.177, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: LT_953 |37.46Mb, server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: LT_956 |32.93Mb, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT_957 |37.89Mb, server: 213.183.53.177, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: LT_974 |42.62Mb, server: 213.183.53.177, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: LT_978 |34.33Mb, server: 213.183.53.177, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: LT_987 |36.84Mb, server: 213.183.53.177, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: LT_988 |39.66Mb, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -802,98 +1554,192 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - -NL-大米粥-28_28
-      - 15510 @WangCai_1
-      - US_191_14_17Mb_29
-      - Pool_荷兰_1394
-      - 捷克(TG频道:@poduvjd)
-      - tg:univstar_Relay-61
-      - DE_550+_31_82Mb_69
-      - US-Openit.ml
-      - VN-Openit.ml
-      - 中国(TG频道:@poduvjd)
-      - vpnhat-香港HKBN-dip
-      - DE_551+_11_32Mb_14
-      - -AU-大米粥-49_49
-      - LT_1232+_21_03Mb_131
-      - (Youtube技术分享室)🇨🇭瑞士 2
-      - 波兰(TG频道:@poduvjd)
-      - CN_409+_10_97Mb_67
-      - RO_1258+_40_70Mb_134
-      - -NL-大米粥-15_15
-      - "新加坡: 深港RFC-微云"
-      - RO_1267+_50_91Mb_187
-      - LT_1275+_23_11Mb_204
-      - (Youtube技术分享室)🇨🇳中国 6
-      - -NL-大米粥-23_23
-      - 80丨联通手厅丨日本50Mbps丨2
-      - HK-Openit_ml_63
-      - CN
-      - RO_1276+_11_96Mb_224
-      - :俄罗斯-ss-5.183.179.145:9026-可用-直连-仅支持德国地区NF自制剧
-      - DE_704
-      - GB_876+|10.20Mb
-      - DE_595+_58_00Mb_64
-      - DE_606
-      - US-Openit.ml 2
-      - (Youtube技术分享室)🇨🇳中国 14
-      - DE_557+_18_51Mb_46
-      - https://t.me/poduvjd
-      - JP-Openit.ml
-      - (Youtube技术分享室)🇬🇧英国 25
-      - DE_584
-      - (Youtube技术分享室)🇬🇧英国 28
-      - GB_898+|12.78Mb
-      - 15503 @WangCai_1
-      - github.com/v2rayfree - 俄罗斯  37
-      - JP
-      - Relay_中国-未知_479
-      - CN_438+_10_63Mb_144
-      - (Youtube技术分享室)🇨🇳中国 16
+      - "[05-04]|oslook|日本(JP)Japan/Tokyo_29"
+      - "[05-04]|oslook|中国台湾(TW)Taiwan/CityOffice_2"
+      - _HK_香港_1
+      - CN_47_36_83Mb_1
+      - CZ-Openit.ml
+      - github.com/freefq - 美国  12
+      - github.com/freefq - 美国Microsoft数据中心 21
+      - github.com/freefq - 日本东京Oracle云计算数据中心 9
+      - HK-Openit.ml
+      - HK-Openit_ml_54
+      - JP_21
+      - KR-Openit.ml
+      - KR-高速节点购买：v1.mk/vip
+      - RELAY
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - Relay_🇨🇳CN-🇹🇼TW_459
+      - Relay_🇨🇳CN-🏁ZZ_451
+      - Relay_🇨🇳CN-🏁ZZ_465
+      - Relay_美国-日本_18
+      - RU-Openit.ml
+      - RU-Openit.ml 2
       - RU-高速节点购买：v1.mk/vip（浏览器打开）
-      - CN_58+TGatpeekfun_152
-      - AU_67+|33.21Mb
-      - AU_159+|20.33Mb
-      - DE_576+_55_58Mb_36
-      - (Youtube技术分享室)🇩🇪德国 4
-      - -NL-大米粥-56_56
-      - RO_1390
-      - 捷克(TG频道:@poduvjd) 2
-      - DE_598
-      - HK-Openit_ml_57
-      - -AU-大米粥-32_32
-      - CN_59+TGatpeekfun_9
-      - AU_71+|32.67Mb
-      - AU_83+|27.40Mb
-      - DE_621+_33_22Mb_50
-      - CN_06
-      - TW |24.02Mb
-      - "[05-02]-🇺🇦-乌克兰-002-5.183.179.140"
-      - DE_572+_36_83Mb_78
-      - DE_666
-      - DE_630+_40_47Mb_56
-      - (Youtube技术分享室)🇨🇭瑞士 4
-      - DE_555+_75_34Mb_15
-      - AU_154+|37.43Mb
-      - RO_1482
-      - DE_445+_22_30Mb_12
-      - DE_575+|16.50Mb
-      - 美国_-tg频道:atunivstar_20
-      - _12_71Mb_126
-      - :中国-ss-14.29.124.168:25270-可用-直连-完全不支持NF
-      - _11_18Mb_24
+      - Singapore, V2
+      - TW-Openit.ml
+      - TW-Openit.ml 2
+      - VN-Openit.ml
+      - 澳大利亚_147
+      - 韩国_1080
+      - 荷兰 005
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - 美国Microsoft数据中心 4
+      - 日本
+      - 香港
+      - 香港 2
+      - 亚洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
+      - 中国
+      - (Youtube技术分享室)🇨🇭瑞士+5
+      - (Youtube技术分享室)🇩🇪德国+13
+      - (Youtube技术分享室)🇩🇪德国+33
+      - :美国-ss-169.197.142.99:6679-可用-直连-仅支持加拿大地区NF自制剧
+      - :中国-ss-14.29.124.168:25287-可用-直连-完全不支持NF
+      - "[05-02]-🇦🇶-亚太地区-006-103.172.116.6"
+      - _13_22Mb_130
+      - _GB_英国
+      - _PL_波兰
+      - _US_美国
+      - _US_美国 2
+      - "|21.60Mb"
+      - 502更新_DE_德国_15
+      - AU_120+|40.68Mb
+      - AU_143+|28.76Mb
+      - AU_146+|18.51Mb
+      - AU_81+|14.40Mb
+      - AU-Openit_ml_49
+      - -AU-大米粥-46_46
+      - CA_09 TG@peekfun
+      - CA-Openit_ml_53
+      - CN_399
+      - CN_44+TGatpeekfun_92
+      - CN_48+TGatpeekfun_12
+      - CN_51+TGatpeekfun_11
+      - CN_56+TGatpeekfun_7
+      - CN-高速节点购买：v1.mk/vip（浏览器打开）
+      - DE_509+_10_91Mb_24
+      - DE_559+_41_73Mb_71
+      - DE_585
+      - DE_587+_53_22Mb_210
+      - DE_590+_11_79Mb_20
+      - DE_598+_21_01Mb_17
+      - DE_600+_55_38Mb_133
+      - DE_606+_43_93Mb_190
+      - DE_608+_250_06Mb_91
+      - DE_650+_55_05Mb_92
+      - -GB-大米粥_16
+      - LT_1057
+      - LT_1135+_120_15Mb_42
+      - LT_1173
+      - LT_427 |24.74Mb
+      - NL_1241
+      - NL_TG频道univstar_68
+      - -NL-大米粥-12_12
+      - -NL-大米粥-14_14
+      - -NL-大米粥-17_17
+      - -NL-大米粥-26_26
+      - -NL-大米粥-33_33
+      - -NL-大米粥-41_41
+      - -NL-大米粥-8_8
+      - Relay—tg:univstar_2
+      - RO_1249+_85_69Mb_15
+      - RO_1262 |18.60Mb
+      - RO_1336+|26.40Mb
+      - RU_1461
+      - RU_1467
+      - RU_1479
+      - RU_1495
+      - RU_1514
+      - RU_1515
+      - RU_1523
+      - RU_166 TG@peekfun
+      - RU_174 TG@peekfun
+      - RU_530 |40.88Mb
+      - US_204 TG@peekfun
+      - US_630 |11.86Mb
+      - vpnhat-彰化Hinet-dip
+      - 德国-1_41MB/s(Youtube:不良林)_244
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 3
+      - 加拿大(欢迎订阅Youtube破解资源君) 4
+      - 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 加拿大(欢迎订阅Youtube破解资源君) 6
+      - 加拿大(欢迎订阅Youtube破解资源君) 7
+      - 美国(欢迎订阅Youtube破解资源君)
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 美国(欢迎订阅Youtube破解资源君) 3
+      - 欧洲(欢迎订阅Youtube破解资源君)
+      - 亚洲(欢迎订阅Youtube破解资源君) 3
+      - 亚洲(欢迎订阅Youtube破解资源君) 4
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
+      - "[05-05]-🇯🇵-日本-568-tky3.ssgnode.ga"
+      - Frankfurt-M247
+      - github.com/freefq - 美国  48
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 香港阿里云 1
+      - github.com/freefq - 香港阿里云 2
+      - github.com/freefq - 香港阿里云 6
+      - github.com/freefq - 新加坡阿里云 4
+      - github.com/freefq - 新加坡阿里云 5
+      - HK_830 |10.72Mb
+      - HK-Openit.ml 2
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - KR-Openit.ml 2
+      - Relay_🇭🇰HK-🇭🇰HK_938
+      - Relay_🇺🇸US-🇺🇸US_51
       - RELAY-Openit.ml
-      - CN_186+_47_81Mb_55
-      - RO_1273+_16_57Mb_213
-      - 15507 @WangCai_1
-      - 日本 020
-      - -NL-大米粥-16_16
-      - US_2625 |32.85Mb
-      - DE_551+_40_00Mb_32
-      - CN_66_2_06Mb_6
-      - DE_553+_31_57Mb_70
+      - RELAY-Openit.ml 2
+      - Santa Clarita-Multacom
+      - SC-Openit.ml
+      - SG_1443 |31.40Mb
+      - SG_1444 |31.31Mb
+      - SG-Openit.ml
+      - US_3016 |27.26Mb
+      - US-Openit.ml
+      - US-Openit.ml 2
       - US-Openit.ml 3
-      - DE_540+_10_98Mb_33
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - 台湾Hinet_33
+      - 乌克兰(欢迎订阅Youtube破解资源君)
+      - "新加坡: 杭港DMIT-猫猫"
+      - 长沙联通-Kyoto-Aiyun
+      - 长沙联通-Santa Clarita-Multacom
+      - 长沙联通-Sydney-M247
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - :俄罗斯-ssr-213.183.53.177:9020-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.177:9094-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9008-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - :俄罗斯-ssr-213.183.53.200:9031-可用-直连-仅支持俄罗斯联邦地区NF自制剧
+      - GB_744 |52.06Mb
+      - LT_934 |35.14Mb
+      - LT_937 |41.60Mb
+      - LT_938 |31.01Mb
+      - LT_942 |37.38Mb
+      - LT_945 |38.22Mb
+      - LT_947 |34.62Mb
+      - LT_950 |31.60Mb
+      - LT_951 |32.73Mb
+      - LT_953 |37.46Mb
+      - LT_956 |32.93Mb
+      - LT_957 |37.89Mb
+      - LT_974 |42.62Mb
+      - LT_978 |34.33Mb
+      - LT_987 |36.84Mb
+      - LT_988 |39.66Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
