@@ -5,605 +5,405 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 80丨冰钉丨香港1Gbps丨3, server: azhk7.mayiyun.vip, port: 80, type: vmess, uuid: c7378697-b358-43cd-bd61-c34907a13dbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: open.dingtalk.com}}, udp: true}
-  - {name: 美国 004, server: 5.vip341.xyz, port: 443, type: vmess, uuid: 79c82b92-bc4c-382c-8042-b50d27b9c564, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: 5.vip341.xyz}}, udp: true}
-  - {name: 香港环电-隧道1, server: cu.mj-cn.cyou, port: 26622, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: 美国 164, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 英国  19, server: 193.123.225.89, port: 59191, type: vmess, uuid: 5e657ab5-b553-464e-8d8c-61ba03b81b55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 马来西亚-优化, server: cu.mj-cn.cyou, port: 26623, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: 香港环电-隧道2, server: cm.mj-cn.cyou, port: 26622, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: 香港HKT2-优化, server: cu.mj-cn.cyou, port: 16631, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: "|Netflix_20", server: 1.tw.zz.xxxxx.x-t-fuckword.network, port: 53137, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 149, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本-优化, server: cu.mj-cn.cyou, port: 16617, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: VN, server: 103.161.177.228, port: 80, type: vmess, uuid: 84e11227-e771-4c72-88ab-9d74c5b22e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: livestream2.tv360.vn}}, udp: true}
-  - {name: 马来西亚-优化3, server: cm.mj-cn.cyou, port: 26623, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: 香港环电-隧道3, server: ct.mj-cn.cyou, port: 26622, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_39, server: us2.v3.zz.cn.fuckword.club, port: 58420, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 148, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-优化, server: cu.mj-cn.cyou, port: 16633, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: 美国(nodefree.org免费节点每日更新)_20, server: 45.76.71.233, port: 46983, type: vmess, uuid: 69099258-1476-46dd-a51b-84e915e941be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1tGK82lU/}, udp: true}
-  - {name: 台湾-智能, server: gtm.mj-cn.cyou, port: 16616, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_45, server: word.2.fuckword.club, port: 47831, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 墨西哥-优化2, server: cm.mj-cn.cyou, port: 16636, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: 日本-智能, server: gtm.mj-cn.cyou, port: 16617, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 墨西哥-优化3, server: ct.mj-cn.cyou, port: 16636, type: vmess, uuid: 455af770-9c42-424e-b284-cb51655d5228, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: "|Netflix_125", server: 2.sg.zz.xxxxx.x-t-fuckword.network, port: 60301, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RU_1429, server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_422, server: xjcnyd02.2288.org, port: 63015, type: ss, cipher: aes-256-gcm, password: 2e8f2af3-4bec-4adb-b0bf-bb6e503e7003, udp: true}
-  - {name: Relay_🇨🇳CN-🇳🇱NL_430, server: xjcnyd02.2288.org, port: 63018, type: ss, cipher: chacha20-ietf-poly1305, password: 2e8f2af3-4bec-4adb-b0bf-bb6e503e7003, udp: true}
-  - {name: -NL-大米粥-10_10, server: 213.183.51.172, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: CA-高速节点购买：v1.mk/vip（浏览器打开）, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开）, server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: LT_1105, server: 213.183.63.218, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: -NL-大米粥-22_22, server: 213.183.51.172, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 169.197.142.99, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国 143, server: 172.99.190.61, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国 120, server: 172.99.190.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: NL_1291, server: 213.183.59.229, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 213.183.53.200:9043, server: 213.183.53.200, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: -NL-大米粥-15_15, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: (Youtube技术分享室)🇬🇧英国 22, server: 152.89.210.105, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: BG_27, server: 213.183.63.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_412, server: 14.29.124.168, port: 24010, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: RU_1493, server: 217.30.10.67, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 美国(nodefree.org+免费节点每日更新)_84, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(nodefree.org+免费节点每日更新)_60, server: 38.68.135.19, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: NL_1273, server: 213.183.51.172, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: DE_654, server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: RU_1533, server: 217.30.10.67, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: RU_1452, server: 217.30.10.66, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 3, server: 169.197.142.99, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: (Youtube技术分享室)🇨🇳中国 6, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 4, server: 38.68.135.19, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA-高速节点购买：v1.mk/vip（浏览器打开） 2, server: 198.57.27.225, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: RO_1382, server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _CA_加拿大_58, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US-高速节点购买：v1.mk/vip（浏览器打开） 5, server: 169.197.142.99, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: GB-高速节点购买：v1.mk/vip（浏览器打开）, server: 172.99.190.61, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: YouTube梦歌|Netflix_44, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, sni: jgwcc3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_134, server: ygzyd.sub-nthu.com, port: 35002, type: trojan, password: ae93d689-f6ce-429b-9855-4f5744b3dfea, sni: hk-1.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_43, server: szdx.sub-nthu.com, port: 35005, type: trojan, password: ae93d689-f6ce-429b-9855-4f5744b3dfea, sni: szdx.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_40, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: ae93d689-f6ce-429b-9855-4f5744b3dfea, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_75, server: shlt.sub-nthu.com, port: 35005, type: trojan, password: ae93d689-f6ce-429b-9855-4f5744b3dfea, sni: shlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_41, server: cn2hn.sub-nthu.com, port: 35005, type: trojan, password: ae93d689-f6ce-429b-9855-4f5744b3dfea, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_102, server: hkbn.okvpn.xyz, port: 12000, type: trojan, password: dbf0d1a6-e81e-4f1b-8d46-e929c05f380f, sni: hkbn.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 英国(nodefree.org+免费节点每日更新)_10, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, skip-cert-verify: true, udp: true}
-  - {name: "新加坡DO: 广州移动直连-898", server: china-gy-axecc.898868.xyz, port: 60891, type: trojan, password: qdN8M9qfmzLhVNCW, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚(nodefree.org+免费节点每日更新)_5, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
-  - {name: 香港-限速100M-5月11日, server: free.fanqiang.eu, port: 16502, type: trojan, password: 28722b32-f7cd-4e10-8aed-f8358ca2e438, sni: free1.fanqiang.eu, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_123, server: ygzyd.sub-nthu.com, port: 35005, type: trojan, password: ae93d689-f6ce-429b-9855-4f5744b3dfea, sni: tw-1.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾(nodefree.org+免费节点每日更新)_1, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, skip-cert-verify: true, udp: true}
+  - {name: "[CT/CM]香港 06", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: B0 广州1号-香港HKT打机线 | V2RAY隧道 |, server: ingress-i2.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: "[CT/CM]香港 06 2", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: A1 广州1号-香港HKBN | V2RAY 隧道 |, server: ingress-i2.onebox6.org, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: "[CT/CM]香港 07", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 07 2", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_15, server: ingress-i2.onebox6.org, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i2.onebox6.org}}, udp: true}
+  - {name: "[CT/CM]香港 10", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 10 2", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: JK1-V3-广新GIA01_v2ray_1_5x流量_22, server: jike-gzyd.jiserver.xyz, port: 29853, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: "%7B%22host%22:%22jike1-giasg02.jiserver.xyz%22%7D"}}, udp: true}
+  - {name: vpnhat-Tokyo-AWS, server: 116.129.254.65, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me/vpnhat}}, udp: true}
+  - {name: JP_4599, server: 20.205.125.236, port: 60041, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
+  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 香港动态 HKT B, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: vpnpool-香港HKBN, server: 116.211.197.79, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}, udp: true}
+  - {name: "|Netflix_35", server: cdn-cn.nekocloud.cn, port: 19057, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: "|22.23Mb", server: 20.205.125.236, port: 60013, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: vpnhat-Tokyo-AWS 2, server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me/vpnhat}}, udp: true}
+  - {name: "|Netflix_104", server: cdn-cn.nekocloud.cn, port: 10007, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: "|Netflix_15", server: cdn-cn.nekocloud.cn, port: 19048, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: JK1-V3-广台02_v2ray_1_5x流量_20, server: jike-gzyd.jiserver.xyz, port: 39213, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: "%7B%22host%22:%22jike1-newhinet02.jiserver.xyz%22%7D"}}, udp: true}
+  - {name: SG-Openit.ml, server: v2-2.godlight.xyz, port: 30540, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}, udp: true}
+  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 台湾, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 香港动态 HKT B 2, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 日本标准中继+02, server: 120.232.174.85, port: 27419, type: ss, cipher: aes-128-gcm, password: ksO55Bwsh6ZxaYpX, udp: true}
+  - {name: 台湾 2, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "|Netflix_100", server: cdn-cn.nekocloud.cn, port: 19050, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 14 2", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "|Netflix_13", server: cdn-cn.nekocloud.cn, port: 19092, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: YouTube梦歌|Netflix_83, server: v2-1.godlight.xyz, port: 12240, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
+  - {name: 新加坡B 2, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "[CT/CM]香港 05 2", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: 日本3|中日链路|Netflix, server: hncu.relay.qchwnd.moe, port: 44616, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: jpkirin.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: "[CT/CM]香港 01 2", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "|Netflix_78", server: cdn-cn.nekocloud.cn, port: 19094, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: "[CT/CM]香港 11 2", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
+  - {name: "|Netflix_44", server: cdn-cn.nekocloud.cn, port: 19040, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
+  - {name: "[VIP][广港]香港5•HKT", server: gdcm3.relay.qchwnd.moe, port: 44609, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -626,76 +426,51 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 80丨冰钉丨香港1Gbps丨3
-      - 美国 004
-      - 香港环电-隧道1
-      - 美国 164
-      - github.com/freefq - 英国  19
-      - 马来西亚-优化
-      - 香港环电-隧道2
-      - 香港HKT2-优化
-      - "|Netflix_20"
-      - 美国 149
-      - 日本-优化
-      - VN
-      - 马来西亚-优化3
-      - 香港环电-隧道3
-      - YouTube梦歌|Netflix_39
-      - 美国 148
-      - 香港-优化
-      - 美国(nodefree.org免费节点每日更新)_20
-      - 台湾-智能
-      - YouTube梦歌|Netflix_45
-      - 墨西哥-优化2
-      - 日本-智能
-      - github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 24
-      - 墨西哥-优化3
-      - "|Netflix_125"
-      - RU_1429
-      - Relay_🇨🇳CN-🇺🇸US_422
-      - Relay_🇨🇳CN-🇳🇱NL_430
-      - -NL-大米粥-10_10
-      - CA-高速节点购买：v1.mk/vip（浏览器打开）
-      - US-高速节点购买：v1.mk/vip（浏览器打开）
-      - LT_1105
-      - -NL-大米粥-22_22
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - 美国 143
-      - 美国 120
-      - NL_1291
-      - 213.183.53.200:9043
-      - -NL-大米粥-15_15
-      - (Youtube技术分享室)🇬🇧英国 22
-      - BG_27
-      - Relay_🇨🇳CN-🇹🇼TW_412
-      - RU_1493
-      - 美国(nodefree.org+免费节点每日更新)_84
-      - 美国(nodefree.org+免费节点每日更新)_60
-      - NL_1273
-      - DE_654
-      - RU_1533
-      - RU_1452
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 3
-      - (Youtube技术分享室)🇨🇳中国 6
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 4
-      - CA-高速节点购买：v1.mk/vip（浏览器打开） 2
-      - RO_1382
-      - _CA_加拿大_58
-      - US-高速节点购买：v1.mk/vip（浏览器打开） 5
-      - GB-高速节点购买：v1.mk/vip（浏览器打开）
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_102
-      - 英国(nodefree.org+免费节点每日更新)_10
-      - "新加坡DO: 广州移动直连-898"
-      - 澳大利亚(nodefree.org+免费节点每日更新)_5
-      - 香港-限速100M-5月11日
-      - YouTube梦歌|Netflix_123
-      - 台湾(nodefree.org+免费节点每日更新)_1
+      - "[CT/CM]香港 06"
+      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
+      - "[CT/CM]香港 06 2"
+      - A1 广州1号-香港HKBN | V2RAY 隧道 |
+      - "[CT/CM]香港 07"
+      - "[CT/CM]香港 07 2"
+      - Relay_🇨🇳CN-🇭🇰HK_15
+      - "[CT/CM]香港 10"
+      - "[CT/CM]香港 10 2"
+      - "[CT/CM]香港 08"
+      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
+      - vpnhat-Tokyo-AWS
+      - JP_4599
+      - "[CT/CM]香港 14"
+      - 香港动态 HKT B
+      - "[CT/CM]香港 02"
+      - vpnpool-香港HKBN
+      - "|Netflix_35"
+      - "|22.23Mb"
+      - vpnhat-Tokyo-AWS 2
+      - "|Netflix_104"
+      - "|Netflix_15"
+      - JK1-V3-广台02_v2ray_1_5x流量_20
+      - SG-Openit.ml
+      - 韩国高速接入A
+      - 台湾
+      - 香港动态 HKT B 2
+      - 日本标准中继+02
+      - 台湾 2
+      - "[CT/CM]香港 05"
+      - "|Netflix_100"
+      - "[CT/CM]香港 01"
+      - 新加坡B
+      - "[CT/CM]香港 11"
+      - "[CT/CM]香港 14 2"
+      - "|Netflix_13"
+      - YouTube梦歌|Netflix_83
+      - 新加坡B 2
+      - "[CT/CM]香港 05 2"
+      - 日本3|中日链路|Netflix
+      - "[CT/CM]香港 01 2"
+      - "|Netflix_78"
+      - "[CT/CM]香港 11 2"
+      - "|Netflix_44"
+      - "[VIP][广港]香港5•HKT"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
