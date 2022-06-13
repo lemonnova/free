@@ -5,405 +5,429 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM]香港 06", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: B0 广州1号-香港HKT打机线 | V2RAY隧道 |, server: ingress-i2.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: "[CT/CM]香港 06 2", server: hzrelaycu.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: A1 广州1号-香港HKBN | V2RAY 隧道 |, server: ingress-i2.onebox6.org, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: "[CT/CM]香港 07", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 07 2", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_15, server: ingress-i2.onebox6.org, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i2.onebox6.org}}, udp: true}
-  - {name: "[CT/CM]香港 10", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 10 2", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: JK1-V3-广新GIA01_v2ray_1_5x流量_22, server: jike-gzyd.jiserver.xyz, port: 29853, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: "%7B%22host%22:%22jike1-giasg02.jiserver.xyz%22%7D"}}, udp: true}
-  - {name: vpnhat-Tokyo-AWS, server: 116.129.254.65, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: JP_4599, server: 20.205.125.236, port: 60041, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.205.125.236}}, udp: true}
-  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 香港动态 HKT B, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: vpnpool-香港HKBN, server: 116.211.197.79, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: "|Netflix_35", server: cdn-cn.nekocloud.cn, port: 19057, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: "|22.23Mb", server: 20.205.125.236, port: 60013, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnhat-Tokyo-AWS 2, server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me/vpnhat}}, udp: true}
-  - {name: "|Netflix_104", server: cdn-cn.nekocloud.cn, port: 10007, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: "|Netflix_15", server: cdn-cn.nekocloud.cn, port: 19048, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: JK1-V3-广台02_v2ray_1_5x流量_20, server: jike-gzyd.jiserver.xyz, port: 39213, type: vmess, uuid: 221828e0-4192-342c-99fc-9a0af6e06823, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jike1, headers: {Host: "%7B%22host%22:%22jike1-newhinet02.jiserver.xyz%22%7D"}}, udp: true}
-  - {name: SG-Openit.ml, server: v2-2.godlight.xyz, port: 30540, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /54f634fs, headers: {Host: v2-2.godlight.xyz}}, udp: true}
-  - {name: 韩国高速接入A, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 台湾, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 香港动态 HKT B 2, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 日本标准中继+02, server: 120.232.174.85, port: 27419, type: ss, cipher: aes-128-gcm, password: ksO55Bwsh6ZxaYpX, udp: true}
-  - {name: 台湾 2, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "|Netflix_100", server: cdn-cn.nekocloud.cn, port: 19050, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 新加坡B, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 14 2", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "|Netflix_13", server: cdn-cn.nekocloud.cn, port: 19092, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: YouTube梦歌|Netflix_83, server: v2-1.godlight.xyz, port: 12240, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
-  - {name: 新加坡B 2, server: shallaz.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "[CT/CM]香港 05 2", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: 日本3|中日链路|Netflix, server: hncu.relay.qchwnd.moe, port: 44616, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: jpkirin.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: "[CT/CM]香港 01 2", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 16583:WWww001, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "|Netflix_78", server: cdn-cn.nekocloud.cn, port: 19094, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: "[CT/CM]香港 11 2", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 6166:LL00oooii8uu, obfs-param: telegram.channel.p2psharing, udp: true}
-  - {name: "|Netflix_44", server: cdn-cn.nekocloud.cn, port: 19040, type: vmess, uuid: 1c1dbf58-1a59-3aa7-bf22-384eb45ddff2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dahjwuh, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: "[VIP][广港]香港5•HKT", server: gdcm3.relay.qchwnd.moe, port: 44609, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn, server: cm.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 2, server: cm.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 3, server: cmb.3sx.xyz, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 4, server: iepl.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cfba73f-d724-4e0e-b261-e0c90a549046, udp: true}
+  - {name: -中国-linkn 5, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: -中国-linkn 6, server: cm.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 7, server: cm.3sx.xyz, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 8, server: cmb.3sx.xyz, port: 61022, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 9, server: cm.3sx.xyz, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 10, server: cmb.3sx.xyz, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 11, server: cm.3sx.xyz, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 12, server: cmb.3sx.xyz, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 13, server: cmb.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 14, server: cm.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 15, server: cmb.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 16, server: cmb.3sx.xyz, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 17, server: cm.3sx.xyz, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 18, server: cmb.3sx.xyz, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 19, server: cm.3sx.xyz, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 20, server: cmb.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, udp: true}
+  - {name: -中国-linkn 21, server: zhuanfabj1.yooo.me, port: 45024, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: zhilianwr2.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn, server: transit1.fanqiang.eu, port: 15004, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: tw1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 22, server: 103.56.62.145, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 2, server: zhuanfabj2.yooo.me, port: 3526, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: zhuanfaxjp1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 3, server: zhuanfabj2.yooo.me, port: 3218, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: zhuanfaxjp2.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 4, server: transit1.fanqiang.eu, port: 15020, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: hkt.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 23, server: zhuanfabj1.yooo.me, port: 44174, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: yingduhdhc1.susuyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 24, server: zhuanfabj1.yooo.me, port: 8641, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: rbwr015.yeooo.xyz, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 5, server: transit1.fanqiang.eu, port: 15040, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: hk2.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 25, server: zhuanfabj1.yooo.me, port: 21308, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: my.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 6, server: transit1.fanqiang.eu, port: 15021, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: hkaz1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 7, server: transit1.fanqiang.eu, port: 15005, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: tw2.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 8, server: transit1.fanqiang.eu, port: 15022, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: hkaz2.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 26, server: zhuanfabj1.yooo.me, port: 38216, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: dhdgbcstaiguo1.susuyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: -美国-linkn 9, server: transit1.fanqiang.eu, port: 15039, type: trojan, password: 0d6dad80-1b20-4d2e-9939-a011f7860777, sni: hk1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 27, server: 103.56.60.235, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 28, server: 120.233.186.71, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: -卢森堡-linkn, server: 91.243.81.161, port: 12306, type: trojan, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, sni: douyincdn.com, skip-cert-verify: true, udp: true}
+  - {name: -卢森堡-linkn 2, server: 91.243.81.19, port: 12306, type: trojan, password: 53ddc3e7-6cac-4eb9-8742-dbdefe04c1a6, sni: douyincdn.com, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 29, server: zhuanfabj1.yooo.me, port: 32699, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: tsedcdcc1.susuyun.xyz, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 30, server: zhuanfabj1.yooo.me, port: 42024, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: zhuanfawr1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 31, server: zhuanfabj1.yooo.me, port: 52671, type: trojan, password: 720554a2-c07a-30e9-a989-7e282894d6ac, sni: wr4zhilian1.yooo.me, skip-cert-verify: true, udp: true}
+  - {name: -中国-linkn 32, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: Vm1wS01GWXhVbkpOVm1oV1lUSlNjVlZ0ZUV0VlZscHlWbTVrYWxac1dqRlpNRnByWVRKS1NGVnNhRnBXVm5CTFZVWkZPVkJSUFQw, udp: true}
+  - {name: -中国-linkn 33, server: 120.233.185.189, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: Vm1wS01GWXhVbkpOVm1oV1lUSlNjVlZ0ZUV0VlZscHlWbTVrYWxac1dqRlpNRnByWVRKS1NGVnNhRnBXVm5CTFZVWkZPVkJSUFQw, udp: true}
+  - {name: -中国-linkn 34, server: 58.247.140.151, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: Vm1wS01GWXhVbkpOVm1oV1lUSlNjVlZ0ZUV0VlZscHlWbTVrYWxac1dqRlpNRnByWVRKS1NGVnNhRnBXVm5CTFZVWkZPVkJSUFQw, udp: true}
+  - {name: -中国-linkn 35, server: 58.247.140.151, port: 11420, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: Vm1wS01GWXhVbkpOVm1oV1lUSlNjVlZ0ZUV0VlZscHlWbTVrYWxac1dqRlpNRnByWVRKS1NGVnNhRnBXVm5CTFZVWkZPVkJSUFQw, udp: true}
+  - {name: -中国-linkn 36, server: 120.233.185.189, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: Vm1wS01GWXhVbkpOVm1oV1lUSlNjVlZ0ZUV0VlZscHlWbTVrYWxac1dqRlpNRnByWVRKS1NGVnNhRnBXVm5CTFZVWkZPVkJSUFQw, udp: true}
+  - {name: -中国-linkn 37, server: 58.247.140.151, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: Vm1wS01GWXhVbkpOVm1oV1lUSlNjVlZ0ZUV0VlZscHlWbTVrYWxac1dqRlpNRnByWVRKS1NGVnNhRnBXVm5CTFZVWkZPVkJSUFQw, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -426,51 +450,54 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 06"
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - "[CT/CM]香港 06 2"
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 07 2"
-      - Relay_🇨🇳CN-🇭🇰HK_15
-      - "[CT/CM]香港 10"
-      - "[CT/CM]香港 10 2"
-      - "[CT/CM]香港 08"
-      - JK1-V3-广新GIA01_v2ray_1_5x流量_22
-      - vpnhat-Tokyo-AWS
-      - JP_4599
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 02"
-      - vpnpool-香港HKBN
-      - "|Netflix_35"
-      - "|22.23Mb"
-      - vpnhat-Tokyo-AWS 2
-      - "|Netflix_104"
-      - "|Netflix_15"
-      - JK1-V3-广台02_v2ray_1_5x流量_20
-      - SG-Openit.ml
-      - 韩国高速接入A
-      - 台湾
-      - 香港动态 HKT B 2
-      - 日本标准中继+02
-      - 台湾 2
-      - "[CT/CM]香港 05"
-      - "|Netflix_100"
-      - "[CT/CM]香港 01"
-      - 新加坡B
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 14 2"
-      - "|Netflix_13"
-      - YouTube梦歌|Netflix_83
-      - 新加坡B 2
-      - "[CT/CM]香港 05 2"
-      - 日本3|中日链路|Netflix
-      - "[CT/CM]香港 01 2"
-      - "|Netflix_78"
-      - "[CT/CM]香港 11 2"
-      - "|Netflix_44"
-      - "[VIP][广港]香港5•HKT"
+      - -中国-linkn
+      - -中国-linkn 2
+      - -中国-linkn 3
+      - -中国-linkn 4
+      - -中国-linkn 5
+      - -中国-linkn 6
+      - -中国-linkn 7
+      - -中国-linkn 8
+      - -中国-linkn 9
+      - -中国-linkn 10
+      - -中国-linkn 11
+      - -中国-linkn 12
+      - -中国-linkn 13
+      - -中国-linkn 14
+      - -中国-linkn 15
+      - -中国-linkn 16
+      - -中国-linkn 17
+      - -中国-linkn 18
+      - -中国-linkn 19
+      - -中国-linkn 20
+      - -中国-linkn 21
+      - -美国-linkn
+      - -中国-linkn 22
+      - -美国-linkn 2
+      - -美国-linkn 3
+      - -美国-linkn 4
+      - -中国-linkn 23
+      - -中国-linkn 24
+      - -美国-linkn 5
+      - -中国-linkn 25
+      - -美国-linkn 6
+      - -美国-linkn 7
+      - -美国-linkn 8
+      - -中国-linkn 26
+      - -美国-linkn 9
+      - -中国-linkn 27
+      - -中国-linkn 28
+      - -卢森堡-linkn
+      - -卢森堡-linkn 2
+      - -中国-linkn 29
+      - -中国-linkn 30
+      - -中国-linkn 31
+      - -中国-linkn 32
+      - -中国-linkn 33
+      - -中国-linkn 34
+      - -中国-linkn 35
+      - -中国-linkn 36
+      - -中国-linkn 37
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1834,7 +1861,6 @@ rules:
  - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
  - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
  - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
- - DOMAIN-SUFFIX,sugar.zhihu.com,🍃 应用净化
  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
  - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
  - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
@@ -2410,6 +2436,9 @@ rules:
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
  - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -2497,6 +2526,7 @@ rules:
  - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
  - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
  - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
+ - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
  - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
  - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
@@ -3153,13 +3183,29 @@ rules:
  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
  - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
+ - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,byted-static.com,🎯 全球直连
  - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
  - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
  - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
+ - DOMAIN-SUFFIX,bytednsdoc.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bytegoofy.com,🎯 全球直连
  - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bytescm.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
+ - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
+ - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
+ - DOMAIN-SUFFIX,feelgood.cn,🎯 全球直连
  - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
  - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
  - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
+ - DOMAIN-SUFFIX,huoshanzhibo.com,🎯 全球直连
+ - DOMAIN-SUFFIX,ibytedapm.com,🎯 全球直连
  - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
  - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
  - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
